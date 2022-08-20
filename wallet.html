@@ -28,6 +28,9 @@
     <link href="css/plugins.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/de-grey.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/moralis-v1@1.11.0/dist/moralis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.7.1/web3-provider.min.js"></script>
     <!-- color scheme -->
     <link
       id="colors"
@@ -67,7 +70,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-3 mb30">
-                <a class="box-url" href="03_grey-login.html">
+                <button  onclick="login_metamask()" class="box-url">
                   <span class="box-url-label">Most Popular</span>
                   <img src="images/wallet/1.png" alt="" class="mb20" />
                   <h4>Metamask</h4>
@@ -75,7 +78,7 @@
                     Start exploring blockchain applications in seconds. Trusted
                     by over 1 million users worldwide.
                   </p>
-                </a>
+                </button>
               </div>
 
 
@@ -98,14 +101,14 @@
 
 
               <div class="col-lg-3 mb30">
-                <a class="box-url" href="03_grey-login.html">
+                <button onclick="login_wallet_connect()" class="box-url" >
                   <img src="images/wallet/4.png" alt="" class="mb20" />
                   <h4>WalletConnect</h4>
                   <p>
                     Open source protocol for connecting decentralised
                     applications to mobile wallets.
                   </p>
-                </a>
+                </button>
               </div>
 
               <div class="col-lg-3 mb30">
@@ -264,6 +267,8 @@
     <script src="js/designesia.js"></script>
     <!-- Components -->
     <script src="./components/Header.js"></script>
+    <script src="./moralis/auth.js"></script>
+    <script src="moralis/init.js"></script>
   </body>
 
   <!-- Mirrored from gigaland.io/03_grey-wallet.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Aug 2022 13:28:37 GMT -->

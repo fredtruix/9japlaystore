@@ -51,7 +51,8 @@ const Header = () => {
                                 </ul>
                                 <!-- mainmenu close -->
                                 <div class="menu_side_area">
-                                    <a href="wallet.html" class="btn-main btn-wallet"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                                    <a href="wallet.html" id="connect_wallet" class="btn-main btn-wallet"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                                    <button href="wallet.html" onclick="logout()"  class="btn-main btn-wallet" id="wallet_address" class=""><i class="icon_wallet_alt"></i><span>Logout Wallet</span></button>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
